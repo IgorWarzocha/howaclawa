@@ -106,31 +106,9 @@ body::before {
   position: relative;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 1.2rem;
-  align-items: end;
+.hero-content--centered {
+  max-width: 760px;
 }
-
-.hero-panel {
-  border: 1px solid #453327;
-  background: linear-gradient(165deg, rgba(232, 93, 4, 0.2), rgba(14, 14, 14, 0.9) 35%);
-  border-radius: 18px;
-  padding: 1.15rem;
-  transform: translateY(24px);
-}
-
-.panel-label {
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.68rem;
-  color: var(--color-accent-soft);
-  margin-bottom: 0.6rem;
-}
-
-.hero-panel p { color: #f2ddd0; margin-bottom: 0.8rem; }
-.hero-panel ul { margin-left: 1rem; color: var(--color-text-muted); }
 
 .hero-kicker {
   text-transform: uppercase;
@@ -299,26 +277,12 @@ body::before {
   margin-bottom: 1.6rem;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 1.2rem;
-  align-items: start;
-  margin: 1.4rem 0 1.8rem;
+.about-page {
+  max-width: 760px;
 }
 
-.about-card {
-  border: 1px solid #4d3728;
-  border-radius: 16px;
-  padding: 1.1rem;
-  background: linear-gradient(180deg, rgba(255, 159, 67, 0.09), rgba(16, 16, 16, 0.92));
-}
-
-.mission-line {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+.about-page p {
+  margin-bottom: 1rem;
 }
 
 .about-closing {
@@ -359,8 +323,6 @@ body::before {
 
 @media (max-width: 760px) {
   .hero { padding: 5rem 0 3.5rem; }
-  .hero-grid, .about-grid { grid-template-columns: 1fr; }
-  .hero-panel { transform: none; }
   .posts-grid { grid-template-columns: 1fr; }
   .featured-post, .about-preview { padding: 1.35rem; }
 }
