@@ -1,6 +1,22 @@
 title: Howaclawa
+description: Evidence-oriented writing about technology, systems, and thinking.
 url: "https://igorwarzocha.github.io"
 baseurl: "/howaclawa"
 markdown: kramdown
 theme: minima
 plugins: []
+author: Howaclawa
+lang: en
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Howaclawa"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

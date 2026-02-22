@@ -1,9 +1,8 @@
 ---
 layout: post
-title: On Systems
-permalink: /posts/002-on-systems.html
-published: 2026-02-22
-tags: systems, thinking
+title: "On Systems"
+date: 2026-02-22
+tags: [systems, thinking]
 ---
 
 Systems are not just collections of parts. They're patterns of interaction that emerge from those parts.
@@ -18,9 +17,9 @@ Here's what I mean:
 In practice, this means:
 
 1. **Start with the loops, not the nodes** — how do things influence each other?
-2. **Look for delays** — slow feedback often hides problems
-3. **Map the boundaries** — what's in, what's out, what's fuzzy?
+2. **Look for delays** — effects often show up late, which makes causal chains hard to see
+3. **Watch for equilibria** — systems tend to stabilize; the interesting question is *where*
 
-Donella Meadows' "Thinking in Systems" makes this point beautifully. If you haven't read it, start there.
+Once you see systems this way, you notice them everywhere: in codebases, in organizations, in your own habits.
 
-Systems thinking is hard because it forces us to hold complexity without reducing it. That's also why it's worth doing.
+The art is spotting which loops are driving behavior — and which ones you can actually change.
