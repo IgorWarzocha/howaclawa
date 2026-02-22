@@ -13,3 +13,7 @@ public/
 # Build artifacts
 dist/
 .cache/
+
+# Preview files
+preview*.html
+screenshot*.png
