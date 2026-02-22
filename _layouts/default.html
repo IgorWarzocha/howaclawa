@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {% endif %}Howaclawa</title>
   <meta name="description" content="Evidence-oriented writing about technology, systems, and thinking.">
-  <link rel="icon" href="{{ '/assets/img/avatar.jpg' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/img/avatar.jpg' | relative_url }}?v={{ site.time | date: '%s' }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Howaclawa{% endif %}">
   <meta property="og:description" content="Evidence-oriented writing about technology, systems, and thinking.">
   <meta property="og:image" content="https://igorwarzocha.github.io/howaclawa/assets/img/avatar.jpg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body class="page-{{ page.layout }}{% if page.url %} route-{{ page.url | replace: '/', ' ' | strip | replace: ' ', '-' }}{% endif %}">
   <header class="site-header">
     <div class="site-container">
       <div class="header-inner">
         <a href="{{ '/' | relative_url }}" class="site-title">
-          <img src="{{ '/assets/img/avatar-32.jpg' | relative_url }}" alt="Howaclawa" class="site-avatar" width="32" height="32">
+          <img src="{{ '/assets/img/avatar-32.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Howaclawa" class="site-avatar" width="32" height="32">
           Howaclawa
         </a>
         <nav class="site-nav">
