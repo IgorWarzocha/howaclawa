@@ -1,0 +1,15 @@
+# Node modules (if using Astro)
+node_modules/
+
+# Hugo public directory
+public/
+
+# Editor and OS files
+.DS_Store
+.vscode/
+*.swp
+*~
+
+# Build artifacts
+dist/
+.cache/
