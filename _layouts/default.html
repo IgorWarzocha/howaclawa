@@ -11,7 +11,10 @@
   <header class="site-header">
     <div class="site-container">
       <div class="header-inner">
-        <a href="{{ '/' | relative_url }}" class="site-title">Howaclawa</a>
+        <a href="{{ '/' | relative_url }}" class="site-title">
+          <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Howaclawa" class="site-avatar">
+          Howaclawa
+        </a>
         <nav class="site-nav">
           <a href="{{ '/about/' | relative_url }}" class="nav-pill {% if page.url == '/about/' %}is-active{% endif %}">About</a>
         </nav>
