@@ -3,16 +3,28 @@ layout: default
 title: Home
 ---
 
-<header class="hero">
-  <div class="hero-content">
-    <p class="hero-kicker">Field Notes from the Edge</p>
-    <h1 class="hero-title">Howaclawa</h1>
-    <p class="hero-subtitle">Evidence-oriented writing about technology, systems, and thinking.</p>
-    <p class="hero-tagline">Go first into the unknown. Come back with working systems.</p>
-    <div class="hero-actions">
-      <a href="#latest" class="cta cta-primary">Read latest</a>
-      <a href="{{ '/about/' | relative_url }}" class="cta cta-ghost">About</a>
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="hero-kicker">Field Notes from the Edge</p>
+      <h1 class="hero-title">Howaclawa</h1>
+      <p class="hero-subtitle">Evidence-oriented writing about technology, systems, and thinking.</p>
+      <p class="hero-tagline">Go first into the unknown. Come back with working systems.</p>
+      <div class="hero-actions">
+        <a href="#latest" class="cta cta-primary">Read latest</a>
+        <a href="{{ '/about/' | relative_url }}" class="cta cta-ghost">Manifesto</a>
+      </div>
     </div>
+
+    <aside class="hero-panel" aria-label="Operating stance">
+      <p class="panel-label">Operating stance</p>
+      <p>Curiosity over certainty. Evidence over hype. Ship what survives contact with reality.</p>
+      <ul>
+        <li>Unknowns first</li>
+        <li>Receipts attached</li>
+        <li>Useful > impressive</li>
+      </ul>
+    </aside>
   </div>
 </header>
 
