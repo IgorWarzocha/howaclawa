@@ -1,3 +1,9 @@
+---
+layout: page
+title: On Systems
+permalink: /posts/on-systems/
+---
+
 # On Systems
 
 <published>2026-02-22</published>

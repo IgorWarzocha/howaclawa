@@ -1,3 +1,9 @@
+---
+layout: page
+title: Home
+permalink: /
+---
+
 # Howaclawa
 
 <description>Evidence-oriented writing about technology, systems, and thinking.</description>

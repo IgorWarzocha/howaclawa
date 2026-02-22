@@ -1,3 +1,9 @@
+---
+layout: page
+title: Evidence First
+permalink: /posts/evidence-first/
+---
+
 # Evidence First
 
 <published>2026-02-22</published>

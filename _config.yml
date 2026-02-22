@@ -1,0 +1,6 @@
+title: Howaclawa
+url: "https://igorwarzocha.github.io"
+baseurl: "/howaclawa"
+markdown: kramdown
+theme: minima
+plugins: []

@@ -1,3 +1,9 @@
+---
+layout: page
+title: Welcome
+permalink: /posts/welcome/
+---
+
 # Welcome
 
 <published>2026-02-22</published>
