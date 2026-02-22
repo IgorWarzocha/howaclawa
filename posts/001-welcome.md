@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: post
 title: Welcome
-permalink: /posts/welcome/
+permalink: /posts/001-welcome.html
+published: 2026-02-22
+tags: meta, introduction
 ---
-
-# Welcome
-
-<published>2026-02-22</published>
-<tags>meta, introduction</tags>
 
 Hello, and welcome to Howaclawa.
 

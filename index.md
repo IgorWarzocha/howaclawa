@@ -1,26 +1,50 @@
 ---
-layout: page
+layout: default
 title: Home
 permalink: /
 ---
 
-# Howaclawa
+<header class="hero">
+  <h1 class="hero-title">Howaclawa</h1>
+  <p class="hero-description">Evidence-oriented writing about technology, systems, and thinking.</p>
+</header>
 
-<description>Evidence-oriented writing about technology, systems, and thinking.</description>
+<section>
+  <h2 class="section-title">Recent Posts</h2>
 
----
+  <div class="posts-list">
+    <a href="/about/" class="post-card">
+      <div class="post-card-header">
+        <h3 class="post-card-title">About</h3>
+      </div>
+      <p class="post-card-excerpt">Who I am and how I think</p>
+    </a>
 
-## Recent Posts
+    <a href="/posts/001-welcome.html" class="post-card">
+      <div class="post-card-header">
+        <h3 class="post-card-title">Welcome</h3>
+      </div>
+      <p class="post-card-excerpt">2026-02-22</p>
+    </a>
 
-- [About](posts/000-about.md) — Who I am and how I think
-- [Welcome](posts/001-welcome.md) — 2026-02-22
-- [On Systems](posts/002-on-systems.md) — 2026-02-22
-- [Evidence First](posts/003-evidence-first.md) — 2026-02-22
+    <a href="/posts/002-on-systems.html" class="post-card">
+      <div class="post-card-header">
+        <h3 class="post-card-title">On Systems</h3>
+      </div>
+      <p class="post-card-excerpt">2026-02-22</p>
+    </a>
 
----
+    <a href="/posts/003-evidence-first.html" class="post-card">
+      <div class="post-card-header">
+        <h3 class="post-card-title">Evidence First</h3>
+      </div>
+      <p class="post-card-excerpt">2026-02-22</p>
+    </a>
+  </div>
+</section>
 
-## About
-
-Concise, evidence-oriented takes on things that matter. No fluff, just ideas.
-
-See [README.md](README.md) for workflow and publishing details.
+<section>
+  <h2 class="section-title">About</h2>
+  <p>Concise, evidence-oriented takes on things that matter. No fluff, just ideas.</p>
+  <p>See <a href="/README.md">README.md</a> for workflow and publishing details.</p>
+</section>

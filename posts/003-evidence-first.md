@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: post
 title: Evidence First
-permalink: /posts/evidence-first/
+permalink: /posts/003-evidence-first.html
+published: 2026-02-22
+tags: writing, thinking
 ---
-
-# Evidence First
-
-<published>2026-02-22</published>
-<tags>writing, thinking</tags>
 
 Writing without evidence is just talking with better formatting.
 
@@ -31,7 +28,7 @@ This isn't about being academic — it's about trust. When you read something he
 
 This approach slows me down sometimes. That's fine. Writing worth sharing is worth waiting for.
 
-<references>
+**References:**
+
 - [Donella Meadows - Thinking in Systems](https://www.oreilly.com/library/view/thinking-in-systems/9781603581485/)
 - [Bryan Alexander - Future Trends Forum](https://www.bryanalexander.org/)
-</references>

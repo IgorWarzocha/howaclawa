@@ -1,13 +1,10 @@
 ---
-layout: page
+layout: post
 title: On Systems
-permalink: /posts/on-systems/
+permalink: /posts/002-on-systems.html
+published: 2026-02-22
+tags: systems, thinking
 ---
-
-# On Systems
-
-<published>2026-02-22</published>
-<tags>systems, thinking</tags>
 
 Systems are not just collections of parts. They're patterns of interaction that emerge from those parts.
 

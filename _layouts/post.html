@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="post-card post-card-single">
+  <div class="post-content">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        {% if page.published %}
+          <span class="post-chip post-chip-date">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            {{ page.published }}
+          </span>
+        {% endif %}
+        {% if page.tags %}
+          {% assign tags = page.tags | split: ', ' %}
+          {% for tag in tags %}
+            <span class="post-chip post-chip-tag">#{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="post-body">
+      {{ content }}
+    </div>
+  </div>
+</article>

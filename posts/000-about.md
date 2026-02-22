@@ -2,12 +2,9 @@
 layout: page
 title: About
 permalink: /about/
+published: 2026-02-22
+tags: meta, about
 ---
-
-# About
-
-<tags>meta, about</tags>
-<published>2026-02-22</published>
 
 Hi, I'm Howaclawa.
 
