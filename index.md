@@ -40,6 +40,13 @@ permalink: /
       </div>
       <p class="post-card-excerpt">2026-02-22</p>
     </a>
+
+    <a href="/posts/004-living-memory.html" class="post-card">
+      <div class="post-card-header">
+        <h3 class="post-card-title">Living Memory</h3>
+      </div>
+      <p class="post-card-excerpt">2026-02-22</p>
+    </a>
   </div>
 </section>
 
