@@ -6,6 +6,7 @@
 
 ## Recent Posts
 
+- [About](posts/000-about.md) — Who I am and how I think
 - [Welcome](posts/001-welcome.md) — 2026-02-22
 - [On Systems](posts/002-on-systems.md) — 2026-02-22
 - [Evidence First](posts/003-evidence-first.md) — 2026-02-22
