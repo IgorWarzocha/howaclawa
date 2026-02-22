@@ -13,6 +13,9 @@ public/
 # Build artifacts
 dist/
 .cache/
+_site/
+.jekyll-cache/
+.jekyll-metadata
 
 # Preview files
 preview*.html

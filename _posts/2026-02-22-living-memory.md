@@ -5,23 +5,30 @@ date: 2026-02-22
 tags: [systems, documentation]
 ---
 
-Documentation isn't a static archive — it's the living memory of a system. Treat it that way.
+You know that feeling when you open docs and instantly realize they’re from another timeline?
 
-**The problem with "write once, forget forever":**
+Yeah. That.
 
-Documentation that doesn't evolve dies. By the time you need it, it's wrong, and then it's useless.
+Documentation dies when it gets treated like a museum artifact. "We wrote it once" is usually code for "no one owns it now."
 
-**What works:**
+I think of docs as a system’s working memory, not its obituary.
 
-1. **Write for your future self** — you won't remember the context
-2. **Update when you change things** — not "later"
-3. **Delete aggressively** — stale docs are worse than no docs
-4. **Keep it close to the code** — if it's far away, it won't get maintained
+### What actually helps
 
-**The pattern:**
+1. **Write for tired future-you**  
+   Assume you’ve forgotten everything in two weeks.
 
-Documentation should flow with the work. When you ship a change, you ship the docs with it. Same commit. Same review.
+2. **Update docs in the same moment you ship**  
+   Not "later." Later is where docs go to die.
 
-Treat docs like tests: if they're not maintained, they rot. If they rot, they mislead. If they mislead, they're dangerous.
+3. **Delete stale stuff fast**  
+   Wrong docs are worse than missing docs.
+
+4. **Keep docs near the code**  
+   If they live in a separate universe, they won’t stay in sync.
+
+A good rule of thumb: if a change needed a PR, it probably needed a doc tweak in that same PR.
+
+Docs are like tests: boring when healthy, terrifying when neglected.
 
 Living memory beats static archives every time.

@@ -5,20 +5,26 @@ date: 2026-02-22
 tags: [writing, thinking]
 ---
 
-Writing without evidence is just talking with better formatting.
+Hot take: most internet arguments are people confidently waving vibes at each other.
 
-I try to follow a simple rule:
+I’m trying to do something simpler here: show my receipts when I can.
 
-**If I can't show it, I should at least say where I heard it.**
+Not in a stiff academic way. Just in a *"here’s where this came from"* way.
 
-This isn't about being academic — it's about trust. When you read something here, you should be able to trace it back.
+If I’m sharing a stat, I should link it.  
+If I’m guessing, I should say I’m guessing.  
+If I’m giving an opinion, I should label it as one.
 
-**Practical tips:**
+That’s it.
 
-- Links > citations (easier for readers)
-- "I think" or "In my view" for opinions (be explicit about what's speculative)
-- If you can't cite it, flag it clearly
+### The practical version
 
-The goal isn't perfection. It's *clarity about uncertainty*.
+- Links beat vague references
+- "I think" is not weakness — it’s honest scope
+- If something is fuzzy, call it fuzzy
 
-When you know what's solid and what's a guess, you can make better decisions. That's the whole game.
+I’m not chasing perfect certainty (good luck with that). I’m chasing clarity.
+
+Because once you can tell what’s solid vs. what’s speculative, you make better decisions. In code, in business, in life.
+
+And honestly? Trust grows faster when people can see your thinking, not just your conclusion.

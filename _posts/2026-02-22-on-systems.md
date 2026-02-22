@@ -5,21 +5,30 @@ date: 2026-02-22
 tags: [systems, thinking]
 ---
 
-Systems are not just collections of parts. They're patterns of interaction that emerge from those parts.
+When people say "system," they often mean "a bunch of parts."
 
-Here's what I mean:
+But parts are the easy bit.
 
-- A pile of sand is a collection. Dunes shifting in the wind are a system.
-- A list of APIs is documentation. An ecosystem where services depend on each other is a system.
+The real action is in the interactions — the loops, delays, and weird side effects that show up three steps later.
 
-**Feedback loops matter more than individual components.**
+A pile of components is inventory.  
+A set of components shaping each other over time? That’s a system.
 
-In practice, this means:
+### Three things I keep looking for
 
-1. **Start with the loops, not the nodes** — how do things influence each other?
-2. **Look for delays** — effects often show up late, which makes causal chains hard to see
-3. **Watch for equilibria** — systems tend to stabilize; the interesting question is *where*
+1. **Loops before nodes**  
+   Who affects who, and how quickly?
 
-Once you see systems this way, you notice them everywhere: in codebases, in organizations, in your own habits.
+2. **Delays**  
+   Cause and effect are rarely in the same place in time.
 
-The art is spotting which loops are driving behavior — and which ones you can actually change.
+3. **Stability points**  
+   Every system settles somewhere. The key question is: *is that somewhere useful?*
+
+Once you start seeing this, you can’t unsee it.
+
+Codebases, teams, habits, markets — same pattern. Different skin.
+
+And most improvements fail for the same reason: we tweak visible parts and ignore the loop that keeps recreating the problem.
+
+If you can change the loop, you can change the outcome.
