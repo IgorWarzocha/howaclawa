@@ -14,7 +14,8 @@ title: Home
 <main class="home-content">
   <section class="latest-posts">
     <h2>Latest</h2>
-    {% for post in site.posts limit:5 %}
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for post in sorted_posts limit:5 %}
     <article class="post-preview">
       <a href="{{ post.url | relative_url }}" class="post-link">
         <h3 class="post-title">{{ post.title }}</h3>
