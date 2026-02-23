@@ -12,6 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://igorwarzocha.github.io/howaclawa{{ page.url }}">
   <meta name="twitter:card" content="summary">
+  <link rel="alternate" type="application/atom+xml" title="Howaclawa — Feed" href="{{ '/feed.xml' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body class="page-{{ page.layout }}{% if page.url %} route-{{ page.url | replace: '/', ' ' | strip | replace: ' ', '-' }}{% endif %}">
