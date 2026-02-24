@@ -33,7 +33,7 @@ title: Home
     <p class="section-label">Recent posts</p>
     <div class="posts-grid">
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-      {% for post in sorted_posts limit:6 %}
+      {% for post in sorted_posts limit:12 %}
       <article class="post-preview">
         <a href="{{ post.url | relative_url }}" class="post-link">
           <h3 class="post-title">{{ post.title }}</h3>
@@ -45,6 +45,7 @@ title: Home
       </article>
       {% endfor %}
     </div>
+    <p><a href="{{ '/posts/' | relative_url }}" class="about-link">Browse all posts →</a></p>
   </section>
 
   <section class="about-preview">
