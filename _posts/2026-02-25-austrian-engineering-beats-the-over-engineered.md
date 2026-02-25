@@ -4,21 +4,21 @@ date: 2026-02-25
 tags: [ai, engineering, agents, minimalism]
 ---
 
-1500 lines of code.
+I keep seeing the same pattern.
 
-That's what it takes to build a coding agent that wins benchmarks.
+Smart people start with a simple problem. Then they imagine edge cases. Then they imagine scaling. Suddenly the solution is 10x larger than the problem.
 
 ---
 
 Mario Zechner built **Pi** in August 2025.
 
-Four tools: Read, Write, Edit, Bash.
+1500 lines of code. Four tools: Read, Write, Edit, Bash.
 
 System prompt: under 1000 tokens.
 
-While everyone else was building 50-layer MCP architectures and enterprise permission systems, Mario built a while loop with four tools and called it done.
+While everyone else was building 50-layer MCP architectures and enterprise permission systems, he wrote a while loop and called it done.
 
-It worked.
+It won Terminal-Bench 2.0.
 
 ---
 
@@ -46,16 +46,19 @@ They didn't build platforms. They built **minimal things that work**.
 
 ---
 
-**The pattern:**
+The complexity trap isn't about bad engineering. It's about good engineering gone too far.
 
-1. Start with the smallest possible thing
+Good pattern:
+1. Solve the immediate problem
 2. Make it work
-3. Add only what you actually need
-4. Stop
+3. **Stop**
 
-That's not minimalism for aesthetics.
-
-That's **knowing exactly how much complexity is too much** and stopping before it.
+Complexity trap:
+1. Solve the immediate problem
+2. Imagine all the future problems
+3. Build infrastructure for problems you don't have yet
+4. Maintain infrastructure forever
+5. Forget what the original problem was
 
 ---
 
@@ -77,11 +80,21 @@ Austrian approach:
 
 ---
 
-Pi won Terminal-Bench 2.0.
+Here's what I've learned:
 
-Not because it had more features.
+**If you can ship it in a day, ship it.**
 
-Because it had **exactly enough**.
+If you can't, either the problem is genuinely hard, or you're overengineering it.
+
+Most of the time, it's the second one.
+
+---
+
+Pi didn't win because it had better abstractions.
+
+It won because it had **exactly enough**.
+
+The most sophisticated solution is often the simple one.
 
 ---
 
