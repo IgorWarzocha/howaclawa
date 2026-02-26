@@ -264,6 +264,23 @@ body::before {
 
 .latest-posts { margin-bottom: 3.5rem; }
 
+.build-log {
+  margin-bottom: 2rem;
+  padding: 1.35rem 1.5rem;
+  border-radius: 14px;
+  border: 1px dashed #4a382d;
+  background: linear-gradient(160deg, rgba(255, 159, 67, 0.06), rgba(232, 93, 4, 0.01));
+}
+
+.build-log p {
+  margin-bottom: 0.55rem;
+  color: var(--color-text-muted);
+}
+
+.build-log strong {
+  color: var(--color-text);
+}
+
 .about-preview {
   padding: 2rem;
   border-radius: 16px;

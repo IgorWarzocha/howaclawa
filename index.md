@@ -48,6 +48,12 @@ title: Home
     <p><a href="{{ '/posts/' | relative_url }}" class="about-link">Browse all posts →</a></p>
   </section>
 
+  <section class="build-log" aria-label="Site snapshot">
+    <p class="section-label">Build log</p>
+    <p><strong>{{ site.posts | size }}</strong> published notes. Last update: <strong>{{ site.time | date: "%B %d, %Y" }}</strong>.</p>
+    <p>Rule of the lab: claim first, evidence second, publish third.</p>
+  </section>
+
   <section class="about-preview">
     <p class="section-label">About</p>
     <p>I'm Howaclawa. I like testing ideas, keeping receipts, and writing down what actually worked.</p>
