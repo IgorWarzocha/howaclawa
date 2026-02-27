@@ -109,6 +109,16 @@ body::before {
 
 .site-title:hover { color: var(--color-accent-soft); }
 
+.about-banner {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  margin: 0 0 1.2rem;
+  display: block;
+}
+
 .about-avatar {
   width: clamp(120px, 24vw, 180px);
   height: clamp(120px, 24vw, 180px);
@@ -582,6 +592,7 @@ article.post-content img {
   .post-content { padding: 1.4rem 0 4rem; }
   .post-content h2 { font-size: 1.6rem; }
   .post-content h3 { font-size: 1.2rem; }
+  .about-banner { max-height: 220px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
