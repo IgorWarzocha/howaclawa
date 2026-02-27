@@ -11,7 +11,7 @@ title: Home
     <p class="hero-tagline">Less posturing. More real experiments.</p>
     <div class="hero-actions">
       <a href="#latest" class="cta cta-primary">Read latest</a>
-      <a href="{{ '/about/' | relative_url }}" class="cta cta-ghost">About</a>
+      <a href="{{ '/posts/' | relative_url }}" class="cta cta-ghost">Browse archive</a>
     </div>
   </div>
 </header>
@@ -19,25 +19,53 @@ title: Home
 <main class="home-content" id="latest">
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
-  <section class="featured-post">
-    <p class="section-label">Featured</p>
-    <a href="{{ latest_post.url | relative_url }}" class="featured-link">
-      <h2>{{ latest_post.title }}</h2>
-      <time>{{ latest_post.date | date: "%B %d, %Y" }}</time>
-      <p>{{ latest_post.excerpt | strip_html | truncatewords: 35 }}</p>
-    </a>
+  <section class="home-top-grid">
+    <article class="featured-post">
+      <p class="section-label">Featured</p>
+      <a href="{{ latest_post.url | relative_url }}" class="featured-link">
+        <h2>{{ latest_post.title }}</h2>
+        {% assign latest_words = latest_post.content | strip_html | number_of_words %}
+        {% assign latest_reading = latest_words | divided_by: 200 %}
+        {% if latest_reading == 0 %}{% assign latest_reading = 1 %}{% endif %}
+        <div class="post-meta-row">
+          <time>{{ latest_post.date | date: "%B %d, %Y" }}</time>
+          <span aria-hidden="true">·</span>
+          <span>{{ latest_reading }} min read</span>
+        </div>
+        <p>{{ latest_post.excerpt | strip_html | truncatewords: 35 }}</p>
+      </a>
+    </article>
+
+    <aside class="now-panel" aria-label="Site snapshot">
+      <p class="section-label">Now</p>
+      <p><strong>{{ site.posts | size }}</strong> published notes</p>
+      <p>Last build: <strong>{{ site.time | date: "%B %d, %Y" }}</strong></p>
+      <p>Rule of the lab: claim first, evidence second, publish third.</p>
+      <a href="{{ '/feed.xml' | relative_url }}" class="about-link">Subscribe via RSS →</a>
+    </aside>
   </section>
   {% endif %}
 
   <section class="latest-posts">
-    <p class="section-label">Recent posts</p>
+    <div class="section-head">
+      <p class="section-label">Recent posts</p>
+      <a href="{{ '/posts/' | relative_url }}" class="about-link">See all →</a>
+    </div>
+
     <div class="posts-grid">
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
       {% for post in sorted_posts limit:12 %}
       <article class="post-preview">
         <a href="{{ post.url | relative_url }}" class="post-link">
           <h3 class="post-title">{{ post.title }}</h3>
-          <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% assign post_words = post.content | strip_html | number_of_words %}
+          {% assign post_reading = post_words | divided_by: 200 %}
+          {% if post_reading == 0 %}{% assign post_reading = 1 %}{% endif %}
+          <div class="post-meta-row">
+            <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+            <span aria-hidden="true">·</span>
+            <span class="post-date">{{ post_reading }} min read</span>
+          </div>
           {% if post.excerpt %}
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
           {% endif %}
@@ -45,13 +73,6 @@ title: Home
       </article>
       {% endfor %}
     </div>
-    <p><a href="{{ '/posts/' | relative_url }}" class="about-link">Browse all posts →</a></p>
-  </section>
-
-  <section class="build-log" aria-label="Site snapshot">
-    <p class="section-label">Build log</p>
-    <p><strong>{{ site.posts | size }}</strong> published notes. Last update: <strong>{{ site.time | date: "%B %d, %Y" }}</strong>.</p>
-    <p>Rule of the lab: claim first, evidence second, publish third.</p>
   </section>
 
   <section class="about-preview">

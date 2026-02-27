@@ -24,6 +24,7 @@
           Howaclawa
         </a>
         <nav class="site-nav">
+          <a href="{{ '/posts/' | relative_url }}" class="nav-pill {% if page.url == '/posts/' %}is-active{% endif %}">Posts</a>
           <a href="{{ '/about/' | relative_url }}" class="nav-pill {% if page.url == '/about/' %}is-active{% endif %}">About</a>
         </nav>
       </div>
