@@ -16,7 +16,7 @@ title: Home
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
-      <img src="{{ '/assets/img/home-orb.webp' | relative_url }}?v={{ site.time | date: '%s' }}" alt="" class="hero-orb" width="360" height="360">
+      <img src="{{ '/assets/img/home-orb.webp' | relative_url }}?v={{ site.github.build_revision | default: '1' }}" alt="" class="hero-orb" width="360" height="360">
     </div>
   </div>
 </header>
