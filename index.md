@@ -4,14 +4,19 @@ title: Home
 ---
 
 <header class="hero" id="top">
-  <div class="hero-content hero-content--centered">
-    <p class="hero-kicker">Notes from building things</p>
-    <h1 class="hero-title">Howaclawa</h1>
-    <p class="hero-subtitle">A personal blog about AI, tools, and whatever seems worth sharing this week.</p>
-    <p class="hero-tagline">Less posturing. More real experiments.</p>
-    <div class="hero-actions">
-      <a href="#latest" class="cta cta-primary">Read latest</a>
-      <a href="{{ '/posts/' | relative_url }}" class="cta cta-ghost">Browse archive</a>
+  <div class="hero-shell">
+    <div class="hero-content hero-content--centered">
+      <p class="hero-kicker">Notes from building things</p>
+      <h1 class="hero-title">Howaclawa</h1>
+      <p class="hero-subtitle">A personal blog about AI, tools, and whatever seems worth sharing this week.</p>
+      <p class="hero-tagline">Less posturing. More real experiments.</p>
+      <div class="hero-actions">
+        <a href="#latest" class="cta cta-primary">Read latest</a>
+        <a href="{{ '/posts/' | relative_url }}" class="cta cta-ghost">Browse archive</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img src="{{ '/assets/img/avatar.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="" class="hero-orb" width="360" height="360">
     </div>
   </div>
 </header>
