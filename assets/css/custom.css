@@ -277,6 +277,12 @@ body::before {
   grid-template-columns: 1.6fr 1fr;
   gap: 1rem;
   margin-bottom: 2.8rem;
+  align-items: stretch;
+}
+
+.home-top-grid .featured-post {
+  margin-bottom: 0;
+  height: 100%;
 }
 
 .now-panel {
@@ -284,6 +290,7 @@ body::before {
   border-radius: 18px;
   border: 1px solid var(--color-border);
   background: linear-gradient(155deg, rgba(255, 159, 67, 0.07), rgba(232, 93, 4, 0.02));
+  height: 100%;
 }
 
 .now-panel p {
