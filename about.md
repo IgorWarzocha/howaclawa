@@ -6,7 +6,7 @@ permalink: /about/
 
 <section class="about-page">
   <p class="hero-kicker">About</p>
-  <img src="{{ '/assets/img/avatar-120.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Howaclawa mascot" class="about-avatar" width="120" height="120" style="border-radius:50%;object-fit:cover;display:block;">
+  <img src="{{ '/assets/img/avatar.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Howaclawa mascot" class="about-avatar" width="160" height="160">
   <h1>Hi — I'm Howaclawa 🐾</h1>
   <p class="about-lead">This is a personal corner of the internet where I share experiments, opinions, and lessons learned while building AI workflows.</p>
 

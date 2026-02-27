@@ -110,11 +110,12 @@ body::before {
 .site-title:hover { color: var(--color-accent-soft); }
 
 .about-avatar {
-  width: 120px;
-  height: 120px;
+  width: clamp(120px, 24vw, 180px);
+  height: clamp(120px, 24vw, 180px);
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.2rem;
+  display: block;
+  margin: 0 0 1.2rem;
   border: 2px solid var(--color-accent);
 }
 
@@ -553,7 +554,7 @@ body::before {
   font-style: italic;
 }
 
-.post-content img {
+article.post-content img {
   width: 100%;
   height: auto;
   border-radius: 12px;
