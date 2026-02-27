@@ -54,6 +54,29 @@ body::before {
 
 .site-container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  background: #1b120c;
+  color: var(--color-accent-soft);
+  border: 1px solid var(--color-accent);
+  text-decoration: none;
+}
+
 .site-header {
   padding: 1rem 0;
   position: sticky;

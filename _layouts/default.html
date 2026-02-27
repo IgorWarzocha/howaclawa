@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body class="page-{{ page.layout }}{% if page.url %} route-{{ page.url | replace: '/', ' ' | strip | replace: ' ', '-' }}{% endif %}">
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="site-header">
     <div class="site-container">
       <div class="header-inner">
@@ -31,7 +32,7 @@
     </div>
   </header>
 
-  <main class="site-container">
+  <main id="main-content" class="site-container">
     {{ content }}
   </main>
 
