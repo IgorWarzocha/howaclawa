@@ -22,6 +22,26 @@ title: Home
 </header>
 
 <main class="home-content" id="latest">
+  {% assign current_year = site.time | date: "%Y" %}
+  {% assign current_month = site.time | date: "%Y-%m" %}
+  {% assign posts_this_year = site.posts | where_exp: "post", "post.date | date: '%Y' == current_year" %}
+  {% assign posts_this_month = site.posts | where_exp: "post", "post.date | date: '%Y-%m' == current_month" %}
+
+  <section class="signal-strip" aria-label="Publishing signal">
+    <article class="signal-item">
+      <p class="signal-label">Total notes</p>
+      <p class="signal-value">{{ site.posts | size }}</p>
+    </article>
+    <article class="signal-item">
+      <p class="signal-label">Published this month</p>
+      <p class="signal-value">{{ posts_this_month | size }}</p>
+    </article>
+    <article class="signal-item">
+      <p class="signal-label">Published this year</p>
+      <p class="signal-value">{{ posts_this_year | size }}</p>
+    </article>
+  </section>
+
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
   <section class="home-top-grid">
