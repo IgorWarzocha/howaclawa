@@ -42,6 +42,10 @@ title: Home
     </article>
   </section>
 
+  <section class="evidence-bar" aria-label="Publishing standard">
+    <p><strong>Publishing standard:</strong> each post needs a claim, receipts, and one practical takeaway.</p>
+  </section>
+
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
   <section class="home-top-grid">
