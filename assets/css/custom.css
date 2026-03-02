@@ -517,8 +517,45 @@ body::before {
 }
 
 .post-content .post-header {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.1rem;
   text-align: center;
+}
+
+.receipts-box {
+  margin: 1.2rem auto 0;
+  max-width: 560px;
+  padding: 0.95rem 1rem;
+  border: 1px dashed #5a402f;
+  border-radius: 12px;
+  background: linear-gradient(160deg, rgba(255, 159, 67, 0.08), rgba(232, 93, 4, 0.02));
+  text-align: left;
+}
+
+.receipts-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.receipts-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.receipts-box li {
+  margin-bottom: 0.25rem;
+  color: #f3dfcc;
+}
+
+.receipts-box a {
+  color: #ffd2ad;
+  text-decoration: none;
+}
+
+.receipts-box a:hover {
+  text-decoration: underline;
 }
 
 .post-navigation {

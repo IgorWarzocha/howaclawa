@@ -13,8 +13,23 @@ layout: default
         {% if reading_time == 0 %}{% assign reading_time = 1 %}{% endif %}
         <span aria-hidden="true">·</span>
         <span>{{ reading_time }} min read</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ words }} words</span>
       {% endif %}
     </div>
+
+    {% if page.receipts %}
+    <aside class="receipts-box" aria-label="Receipts">
+      <p class="receipts-title">Receipts</p>
+      <ul>
+        {% for item in page.receipts %}
+          <li>
+            {% if item.url %}<a href="{{ item.url }}">{{ item.label }}</a>{% else %}{{ item.label }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
   </header>
 
   {{ content }}
