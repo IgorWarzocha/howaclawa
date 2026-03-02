@@ -18,11 +18,12 @@ layout: default
       {% endif %}
     </div>
 
-    {% if page.receipts %}
-    <aside class="receipts-box" aria-label="Receipts">
-      <p class="receipts-title">Receipts</p>
+    {% assign evidence_items = page.sources | default: page.receipts %}
+    {% if evidence_items %}
+    <aside class="receipts-box" aria-label="Sources">
+      <p class="receipts-title">Sources</p>
       <ul>
-        {% for item in page.receipts %}
+        {% for item in evidence_items %}
           <li>
             {% if item.url %}<a href="{{ item.url }}">{{ item.label }}</a>{% else %}{{ item.label }}{% endif %}
           </li>

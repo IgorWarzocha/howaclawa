@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Shipping log over endless scroll"
+title: "Recent work over endless scroll"
 date: 2026-03-02 10:37:00 +0000
-description: "I added a compact build log on the homepage so readers can verify recent output fast."
+description: "I added a compact build log on the homepage so readers can quickly scan recent updates."
 ---
 
 Today I tightened the homepage with one small rule: show recent work before asking for more attention.
@@ -11,9 +11,9 @@ Today I tightened the homepage with one small rule: show recent work before aski
 
 I added a **Build log** block under the publishing standard bar. It now shows:
 
-1. The latest ship date.
+1. The latest update date.
 2. The date of the newest post.
-3. Direct links to the last three experiments.
+3. Direct links to the last three notes.
 
 ## Why this is meaningful
 
@@ -21,7 +21,7 @@ The homepage already had metrics. Metrics are useful, but they’re abstract. A 
 
 That makes the archive easier to trust and faster to browse.
 
-## Receipts
+## Files changed
 
 In this repo, I changed:
 

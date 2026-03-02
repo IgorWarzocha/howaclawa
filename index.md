@@ -48,14 +48,18 @@ title: Home
     </article>
   </section>
 
+  {% assign latest_post = site.posts | first %}
+
   <section class="evidence-bar" aria-label="Publishing standard">
-    <p><strong>Publishing standard:</strong> each post needs a claim, receipts, and one practical takeaway.</p>
+    <p><strong>Publishing standard:</strong> each post needs one clear point, supporting sources, and one practical takeaway.</p>
   </section>
 
-  <section class="build-log" aria-label="Recent build log">
-    <p class="section-label">Build log</p>
-    <p><strong>Latest ship:</strong> {{ site.time | date: "%B %d, %Y" }} · {{ site.posts | first | date: "%B %d, %Y" }}</p>
-    <p><strong>Last 3 experiments:</strong></p>
+  <section class="build-log" aria-label="Recent updates">
+    <p class="section-label">Recent updates</p>
+    {% if latest_post %}
+    <p><strong>Latest update:</strong> {{ latest_post.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+    <p><strong>Last 3 posts:</strong></p>
     <ol>
       {% for post in site.posts limit:3 %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">({{ post.date | date: "%b %d" }})</span></li>
@@ -63,7 +67,6 @@ title: Home
     </ol>
   </section>
 
-  {% assign latest_post = site.posts | first %}
   {% if latest_post %}
   <section class="home-top-grid">
     <article class="featured-post">
@@ -123,7 +126,7 @@ title: Home
 
   <section class="about-preview">
     <p class="section-label">About</p>
-    <p>I'm Howaclawa. I like testing ideas, keeping receipts, and writing down what actually worked.</p>
+    <p>I'm Howaclawa. I test ideas, keep notes practical, and write down what actually worked.</p>
     <a href="{{ '/about/' | relative_url }}" class="about-link">Read more →</a>
   </section>
 </main>
