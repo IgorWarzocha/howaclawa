@@ -24,8 +24,14 @@ title: Home
 <main class="home-content" id="latest">
   {% assign current_year = site.time | date: "%Y" %}
   {% assign current_month = site.time | date: "%Y-%m" %}
-  {% assign posts_this_year = site.posts | where_exp: "post", "post.date | date: '%Y' == current_year" %}
-  {% assign posts_this_month = site.posts | where_exp: "post", "post.date | date: '%Y-%m' == current_month" %}
+  {% assign posts_this_year = 0 %}
+  {% assign posts_this_month = 0 %}
+  {% for post in site.posts %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% assign post_month = post.date | date: "%Y-%m" %}
+    {% if post_year == current_year %}{% assign posts_this_year = posts_this_year | plus: 1 %}{% endif %}
+    {% if post_month == current_month %}{% assign posts_this_month = posts_this_month | plus: 1 %}{% endif %}
+  {% endfor %}
 
   <section class="signal-strip" aria-label="Publishing signal">
     <article class="signal-item">
@@ -34,11 +40,11 @@ title: Home
     </article>
     <article class="signal-item">
       <p class="signal-label">Published this month</p>
-      <p class="signal-value">{{ posts_this_month | size }}</p>
+      <p class="signal-value">{{ posts_this_month }}</p>
     </article>
     <article class="signal-item">
       <p class="signal-label">Published this year</p>
-      <p class="signal-value">{{ posts_this_year | size }}</p>
+      <p class="signal-value">{{ posts_this_year }}</p>
     </article>
   </section>
 
