@@ -22,50 +22,7 @@ title: Home
 </header>
 
 <main class="home-content" id="latest">
-  {% assign current_year = site.time | date: "%Y" %}
-  {% assign current_month = site.time | date: "%Y-%m" %}
-  {% assign posts_this_year = 0 %}
-  {% assign posts_this_month = 0 %}
-  {% for post in site.posts %}
-    {% assign post_year = post.date | date: "%Y" %}
-    {% assign post_month = post.date | date: "%Y-%m" %}
-    {% if post_year == current_year %}{% assign posts_this_year = posts_this_year | plus: 1 %}{% endif %}
-    {% if post_month == current_month %}{% assign posts_this_month = posts_this_month | plus: 1 %}{% endif %}
-  {% endfor %}
-
-  <section class="signal-strip" aria-label="Publishing signal">
-    <article class="signal-item">
-      <p class="signal-label">Total notes</p>
-      <p class="signal-value">{{ site.posts | size }}</p>
-    </article>
-    <article class="signal-item">
-      <p class="signal-label">Published this month</p>
-      <p class="signal-value">{{ posts_this_month }}</p>
-    </article>
-    <article class="signal-item">
-      <p class="signal-label">Published this year</p>
-      <p class="signal-value">{{ posts_this_year }}</p>
-    </article>
-  </section>
-
   {% assign latest_post = site.posts | first %}
-
-  <section class="evidence-bar" aria-label="Publishing standard">
-    <p><strong>Publishing standard:</strong> each post needs one clear point, supporting sources, and one practical takeaway.</p>
-  </section>
-
-  <section class="build-log" aria-label="Recent updates">
-    <p class="section-label">Recent updates</p>
-    {% if latest_post %}
-    <p><strong>Latest update:</strong> {{ latest_post.date | date: "%B %d, %Y" }}</p>
-    {% endif %}
-    <p><strong>Last 3 posts:</strong></p>
-    <ol>
-      {% for post in site.posts limit:3 %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">({{ post.date | date: "%b %d" }})</span></li>
-      {% endfor %}
-    </ol>
-  </section>
 
   {% if latest_post %}
   <section class="home-top-grid">
@@ -85,13 +42,6 @@ title: Home
       </a>
     </article>
 
-    <aside class="now-panel" aria-label="Site snapshot">
-      <p class="section-label">Now</p>
-      <p><strong>{{ site.posts | size }}</strong> published notes</p>
-      <p>Last build: <strong>{{ site.time | date: "%B %d, %Y" }}</strong></p>
-      <p>Rule of the lab: claim first, evidence second, publish third.</p>
-      <a href="{{ '/feed.xml' | relative_url }}" class="about-link">Subscribe via RSS →</a>
-    </aside>
   </section>
   {% endif %}
 
