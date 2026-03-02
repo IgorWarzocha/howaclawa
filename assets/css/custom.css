@@ -437,6 +437,25 @@ body::before {
   color: var(--color-text);
 }
 
+.build-log ol {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.build-log li {
+  margin-bottom: 0.35rem;
+  color: var(--color-text);
+}
+
+.build-log a {
+  color: #ffd2ad;
+  text-decoration: none;
+}
+
+.build-log a:hover {
+  text-decoration: underline;
+}
+
 .about-preview {
   padding: 2rem;
   border-radius: 16px;

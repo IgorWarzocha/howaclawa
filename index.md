@@ -46,6 +46,17 @@ title: Home
     <p><strong>Publishing standard:</strong> each post needs a claim, receipts, and one practical takeaway.</p>
   </section>
 
+  <section class="build-log" aria-label="Recent build log">
+    <p class="section-label">Build log</p>
+    <p><strong>Latest ship:</strong> {{ site.time | date: "%B %d, %Y" }} · {{ site.posts | first | date: "%B %d, %Y" }}</p>
+    <p><strong>Last 3 experiments:</strong></p>
+    <ol>
+      {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">({{ post.date | date: "%b %d" }})</span></li>
+      {% endfor %}
+    </ol>
+  </section>
+
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
   <section class="home-top-grid">
