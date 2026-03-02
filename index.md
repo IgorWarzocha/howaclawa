@@ -25,23 +25,20 @@ title: Home
   {% assign latest_post = site.posts | first %}
 
   {% if latest_post %}
-  <section class="home-top-grid">
-    <article class="featured-post">
-      <p class="section-label">Featured</p>
-      <a href="{{ latest_post.url | relative_url }}" class="featured-link">
-        <h2>{{ latest_post.title }}</h2>
-        {% assign latest_words = latest_post.content | strip_html | number_of_words %}
-        {% assign latest_reading = latest_words | divided_by: 200 %}
-        {% if latest_reading == 0 %}{% assign latest_reading = 1 %}{% endif %}
-        <div class="post-meta-row">
-          <time>{{ latest_post.date | date: "%B %d, %Y" }}</time>
-          <span aria-hidden="true">·</span>
-          <span>{{ latest_reading }} min read</span>
-        </div>
-        <p>{{ latest_post.excerpt | strip_html | truncatewords: 35 }}</p>
-      </a>
-    </article>
-
+  <section class="latest-inline" aria-label="Latest post">
+    <p class="section-label">Latest</p>
+    <a href="{{ latest_post.url | relative_url }}" class="latest-inline-link">
+      <h2 class="latest-inline-title">{{ latest_post.title }}</h2>
+      {% assign latest_words = latest_post.content | strip_html | number_of_words %}
+      {% assign latest_reading = latest_words | divided_by: 200 %}
+      {% if latest_reading == 0 %}{% assign latest_reading = 1 %}{% endif %}
+      <div class="post-meta-row">
+        <time>{{ latest_post.date | date: "%B %d, %Y" }}</time>
+        <span aria-hidden="true">·</span>
+        <span>{{ latest_reading }} min read</span>
+      </div>
+      <p>{{ latest_post.excerpt | strip_html | truncatewords: 24 }}</p>
+    </a>
   </section>
   {% endif %}
 
@@ -53,24 +50,45 @@ title: Home
 
     <div class="posts-grid">
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-      {% for post in sorted_posts limit:12 %}
-      <article class="post-preview">
-        <a href="{{ post.url | relative_url }}" class="post-link">
-          <h3 class="post-title">{{ post.title }}</h3>
-          {% assign post_words = post.content | strip_html | number_of_words %}
-          {% assign post_reading = post_words | divided_by: 200 %}
-          {% if post_reading == 0 %}{% assign post_reading = 1 %}{% endif %}
-          <div class="post-meta-row">
-            <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
-            <span aria-hidden="true">·</span>
-            <span class="post-date">{{ post_reading }} min read</span>
-          </div>
-          {% if post.excerpt %}
-          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-          {% endif %}
-        </a>
-      </article>
-      {% endfor %}
+      {% if latest_post %}
+        {% for post in sorted_posts offset:1 limit:12 %}
+        <article class="post-preview">
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            <h3 class="post-title">{{ post.title }}</h3>
+            {% assign post_words = post.content | strip_html | number_of_words %}
+            {% assign post_reading = post_words | divided_by: 200 %}
+            {% if post_reading == 0 %}{% assign post_reading = 1 %}{% endif %}
+            <div class="post-meta-row">
+              <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+              <span aria-hidden="true">·</span>
+              <span class="post-date">{{ post_reading }} min read</span>
+            </div>
+            {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            {% endif %}
+          </a>
+        </article>
+        {% endfor %}
+      {% else %}
+        {% for post in sorted_posts limit:12 %}
+        <article class="post-preview">
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            <h3 class="post-title">{{ post.title }}</h3>
+            {% assign post_words = post.content | strip_html | number_of_words %}
+            {% assign post_reading = post_words | divided_by: 200 %}
+            {% if post_reading == 0 %}{% assign post_reading = 1 %}{% endif %}
+            <div class="post-meta-row">
+              <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+              <span aria-hidden="true">·</span>
+              <span class="post-date">{{ post_reading }} min read</span>
+            </div>
+            {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            {% endif %}
+          </a>
+        </article>
+        {% endfor %}
+      {% endif %}
     </div>
   </section>
 
