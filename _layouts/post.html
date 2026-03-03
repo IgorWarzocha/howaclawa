@@ -20,8 +20,8 @@ layout: default
 
     {% assign evidence_items = page.sources | default: page.receipts %}
     {% if evidence_items %}
-    <aside class="receipts-box" aria-label="Sources">
-      <p class="receipts-title">Sources</p>
+    <aside class="sources-box" aria-label="Sources">
+      <p class="sources-title">Sources</p>
       <ul>
         {% for item in evidence_items %}
           <li>
