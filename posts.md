@@ -5,9 +5,13 @@ permalink: /posts/
 ---
 
 <main class="home-content" id="all-posts">
-  <section class="latest-posts">
-    <p class="section-label">All posts</p>
+  <header class="archive-header">
+    <p class="section-label">Archive</p>
+    <h1 class="archive-title">{{ site.posts | size }} posts</h1>
+    <p class="archive-desc">Experiments, lessons, and notes from building things with AI and systems.</p>
+  </header>
 
+  <section class="latest-posts">
     {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% assign current_year = '' %}
 
@@ -28,6 +32,8 @@ permalink: /posts/
             <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
             <span aria-hidden="true">·</span>
             <span class="post-date">{{ post_reading }} min read</span>
+            <span aria-hidden="true">·</span>
+            <span class="post-date">{{ post_words }} words</span>
           </div>
           {% if post.excerpt %}
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
