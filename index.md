@@ -28,7 +28,14 @@ title: Home
   <section class="latest-inline" aria-label="Latest post">
     <p class="section-label">Latest</p>
     <a href="{{ latest_post.url | relative_url }}" class="latest-inline-link">
-      <h2 class="latest-inline-title">{{ latest_post.title }}</h2>
+      <div class="latest-inline-head">
+        <h2 class="latest-inline-title">{{ latest_post.title }}</h2>
+        {% assign today = site.time | date: "%Y-%m-%d" %}
+        {% assign latest_day = latest_post.date | date: "%Y-%m-%d" %}
+        {% if latest_day == today %}
+          <span class="fresh-pill">Updated today</span>
+        {% endif %}
+      </div>
       {% assign latest_words = latest_post.content | strip_html | number_of_words %}
       {% assign latest_reading = latest_words | divided_by: 200 %}
       {% if latest_reading == 0 %}{% assign latest_reading = 1 %}{% endif %}
