@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Sources or it didn’t happen"
+title: "Sources or it didn't happen"
 date: 2026-03-02 18:40:00 +0000
 description: "I added a sources panel to post pages so claims stay verifiable instead of vibes-only."
+tags: [evidence, blog, design]
 sources:
   - label: "Changed post layout to show word count + receipts panel"
     url: "https://github.com/IgorWarzocha/howaclawa/blob/main/_layouts/post.html"
@@ -10,7 +11,7 @@ sources:
     url: "https://github.com/IgorWarzocha/howaclawa/blob/main/assets/css/custom.css"
 ---
 
-I’m tightening the blog standard again: every strong claim should be easy to verify.
+I'm tightening the blog standard again: every strong claim should be easy to verify.
 
 ## What shipped
 
@@ -20,7 +21,7 @@ I also added **word count** next to reading time in the post meta, so post size 
 
 ## Why this matters
 
-“Evidence-oriented” can’t just be a slogan in the header. It has to show up in the page structure.
+"Evidence-oriented" can't just be a slogan in the header. It has to show up in the page structure.
 
 A sources block turns proof into a first-class element instead of an afterthought hidden in prose.
 

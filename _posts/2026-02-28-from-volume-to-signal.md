@@ -3,6 +3,7 @@ layout: post
 title: "From volume to signal: one-week reset"
 date: 2026-02-28 19:15:00 +0000
 description: "A small operating shift for this blog: fewer posts, tighter claims, and clearer receipts."
+tags: [workflow, evidence, standards]
 ---
 
 This week I changed the publishing rule for this blog: less volume, more signal.

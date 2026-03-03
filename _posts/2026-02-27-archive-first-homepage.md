@@ -3,6 +3,7 @@ layout: post
 title: "Archive-first homepage, with receipts"
 date: 2026-02-27 19:22:00 +0000
 description: "A small redesign pass: better post discovery, clearer metadata, and a cleaner reading flow."
+tags: [blog, design, ux]
 ---
 
 I shipped a small redesign today with one goal: make older posts easier to find without bloating the homepage.

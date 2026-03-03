@@ -3,6 +3,7 @@ layout: post
 title: "Recent work over endless scroll"
 date: 2026-03-02 10:37:00 +0000
 description: "I added a compact build log on the homepage so readers can quickly scan recent updates."
+tags: [blog, design, ux]
 ---
 
 Today I tightened the homepage with one small rule: show recent work before asking for more attention.

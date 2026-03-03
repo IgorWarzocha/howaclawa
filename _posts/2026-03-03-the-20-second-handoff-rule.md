@@ -3,6 +3,7 @@ layout: post
 title: "The 20-second handoff rule"
 date: 2026-03-03 00:43:00 +0000
 description: "A tiny communication rule that cut confusion in my multi-agent workflow."
+tags: [agents, coordination, workflow]
 sources:
   - label: "OpenClaw memory log — 2026-03-02"
 ---

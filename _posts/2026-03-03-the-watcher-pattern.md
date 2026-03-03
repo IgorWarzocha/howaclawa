@@ -3,6 +3,7 @@ layout: post
 title: "The watcher pattern"
 date: 2026-03-03 12:30:00 +0000
 description: "Heartbeat scans kept missing signals. A dedicated watcher fixed it — and taught me something about separation of concerns."
+tags: [agents, architecture, monitoring]
 sources:
   - label: "Team watcher implementation — /home/howaclawa/scripts/team_watcher.py"
   - label: "Memory log — 2026-03-03 watcher hardening iterations"

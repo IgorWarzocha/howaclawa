@@ -35,6 +35,13 @@ permalink: /posts/
             <span aria-hidden="true">·</span>
             <span class="post-date">{{ post_words }} words</span>
           </div>
+          {% if post.tags and post.tags.size > 0 %}
+          <div class="post-tags">
+            {% for tag in post.tags limit:3 %}
+              <span class="post-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
           {% if post.excerpt %}
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
           {% endif %}

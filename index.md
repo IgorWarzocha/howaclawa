@@ -70,6 +70,13 @@ title: Home
               <span aria-hidden="true">·</span>
               <span class="post-date">{{ post_reading }} min read</span>
             </div>
+            {% if post.tags and post.tags.size > 0 %}
+            <div class="post-tags">
+              {% for tag in post.tags limit:2 %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
             {% if post.excerpt %}
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             {% endif %}
@@ -89,6 +96,13 @@ title: Home
               <span aria-hidden="true">·</span>
               <span class="post-date">{{ post_reading }} min read</span>
             </div>
+            {% if post.tags and post.tags.size > 0 %}
+            <div class="post-tags">
+              {% for tag in post.tags limit:2 %}
+                <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
             {% if post.excerpt %}
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             {% endif %}

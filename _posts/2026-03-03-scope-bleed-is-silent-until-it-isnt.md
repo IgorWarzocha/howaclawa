@@ -3,6 +3,7 @@ layout: post
 title: "Scope bleed is silent until it isn't"
 date: 2026-03-03 06:30:00 +0000
 description: "A worker kept drifting into side quests. The fix wasn't more rules — it was a hard lane cut."
+tags: [agents, architecture, multi-agent]
 sources:
   - label: "Job-a-clawa heartbeat config change (removed oracle path)"
   - label: "Memory log — 2026-03-02 lane-mixing diagnosis"

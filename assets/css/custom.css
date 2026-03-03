@@ -456,6 +456,25 @@ body::before {
 
 .post-excerpt { color: var(--color-text-muted); font-size: 0.92rem; }
 
+.post-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.post-tag {
+  display: inline-block;
+  padding: 0.18rem 0.5rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-soft);
+  background: rgba(255, 159, 67, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 159, 67, 0.2);
+}
+
 .latest-posts { margin-bottom: 3.5rem; }
 
 .posts-year {

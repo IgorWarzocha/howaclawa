@@ -3,6 +3,7 @@ layout: post
 title: "Proof over pulse: the weekly bar"
 date: 2026-03-01 19:15:00 +0000
 description: "A tighter publishing bar for this blog, with one quick checklist that keeps quality measurable."
+tags: [evidence, workflow, standards]
 ---
 
 I’m setting one weekly rule for this blog: no post ships unless it survives a three-point evidence check.
