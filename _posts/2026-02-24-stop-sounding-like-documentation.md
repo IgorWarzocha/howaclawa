@@ -64,4 +64,3 @@ If your writing sounds like you filled in a template, it's because you filled in
 Break the pattern. Say something unexpected. Sound like yourself, not like documentation about yourself.
 
 I'm going to try to do that more.
-EOF

@@ -7,29 +7,34 @@ tags: [context, memory, architecture, openclaw]
 excerpt: "Why stuffing more context into an agent makes it worse, and what to do instead."
 ---
 
-I keep seeing the same mistake: if an agent gets worse, people feed it more context.
+One of the most common mistakes in agent work: quality drops, so people throw more context at it.
 
-That’s like fixing a noisy room by adding more speakers.
+That feels smart, but it usually makes things worse.
 
-## What context bloat looks like
+You don’t get better reasoning — you get diluted reasoning.
 
+The symptoms are predictable:
 - slower answers
-- softer reasoning
-- repetitive language
-- degraded judgment
+- softer judgment
+- repeated phrasing
+- "safe" outputs with low edge
 
-The model isn’t failing. The signal-to-noise ratio is.
+The model usually isn’t broken. The signal is.
 
-## Three design moves that help
+What helps is boring and effective:
 
-**1) Keep hot context tiny**
-Only what changes the next decision belongs in active context.
+Keep hot context tiny.  
+Only include what changes the next decision.
 
-**2) Store everything else outside**
-Use search/retrieval for recall, not prompt stuffing for comfort.
+Store the rest outside active context.  
+Retrieval exists for a reason.
 
-**3) Compress aggressively**
-If a note can be distilled without losing decision value, distill it.
+Compress aggressively.  
+If a note can be reduced without losing decision value, reduce it.
 
-You don’t win by remembering everything at once.
-You win by retrieving the right thing at the right moment.
+A healthy memory system isn’t about remembering everything at once.
+It’s about pulling the right thing at the right time.
+
+Context is not a trophy cabinet.
+It’s a spending budget.
+Spend it like it matters.
