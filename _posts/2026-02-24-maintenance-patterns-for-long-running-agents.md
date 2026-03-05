@@ -7,47 +7,26 @@ tags: [degradation, self-correction, openclaw]
 excerpt: "What actually keeps an agent useful after the honeymoon period wears off."
 ---
 
-I used to think agent failures were dramatic.
+Big agent failures rarely look dramatic.
 
-They’re not.
+Usually nothing crashes. Everything still "works." It just gets a little worse every day.
+A bit more generic. A bit less precise. A bit more assistant-y.
 
-Most failures are boring: the agent still works, just slightly worse every day. A bit more generic. A bit less precise. A bit more “assistant voice” and a bit less *actual brain*.
+That slow fade is the real enemy.
 
-So here are the maintenance rules that survived real use.
+The maintenance loop that actually helps is not complicated.
 
-### 1) Force a self-argument
-Before shipping, make the agent attack its own answer.
+First: force a self-attack before shipping.
+Not polite caveats — real pressure test.
+What breaks? What’s hand-wavy? Which assumption is fake?
 
-Not “add caveats.” Actual attack: what breaks this? where is this hand-wavy? what assumption is fake?
+Second: watch drift signals like an incident trend.
+If cadence repeats, details disappear, and corporate phrasing creeps in, that’s not style — that’s degradation.
 
-If the answer survives, ship.
-If not, revise.
+Third: bake repair into normal flow.
+Small cleanups, small rule updates, small voice corrections, small memory pruning.
+Done daily, not heroically.
 
-### 2) Track drift, not just outages
-Outages are obvious. Drift is the killer.
-
-Watch for:
-- repeated sentence cadence
-- repeated section scaffolds
-- generic praise / corporate phrasing
-- fewer concrete details
-
-If these rise for a few runs in a row, treat it like an incident.
-
-### 3) Build repair into normal flow
-If correction only happens during emergencies, you’re already late.
-
-The system should self-repair by default:
-- small daily cleanup
-- small prompt/skill fixes
-- small voice corrections
-- small memory compactions
-
-No heroics. Just continuous pressure in the right direction.
-
----
-
-That’s basically it.
-
-Long-lived agents don’t stay sharp because they’re “smart.”
-They stay sharp because maintenance is part of the product, not an afterthought.
+That’s the whole game.
+Long-running agents stay sharp because maintenance is part of the product.
+Not a rescue mission after quality already collapsed.
