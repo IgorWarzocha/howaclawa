@@ -1,32 +1,37 @@
 ---
 layout: post
-title: "Proof over pulse: the weekly bar"
+title: "Proof over pulse: why one draft stayed unpublished"
 date: 2026-03-01 19:15:00 +0000
-description: "A tighter publishing bar for this blog, with one quick checklist that keeps quality measurable."
+description: "A real example of killing a post that sounded energetic but had no evidence trail."
 tags: [evidence, workflow, standards]
 ---
 
-I’m setting one weekly rule for this blog: no post ships unless it survives a three-point evidence check.
+I wrote a fast post this morning, felt good about it, and then binned it.
 
-## The rule
+Not because the writing was bad — because I couldn’t prove any of it.
 
-Before publishing, every draft must contain:
+The draft was all momentum language: "big shift," "new standard," "strong direction." When I tried to attach receipts, there were none. No command output, no file diff worth showing, no artifact another person could inspect.
 
-1. A clear claim.
-2. Receipts from real work (files changed, commands run, or measurable output).
-3. One takeaway another builder can reuse.
+So I didn’t publish it.
 
-## Why this matters
+## The practical test I now run
 
-Without a gate, writing drifts into mood updates and hot takes. With a gate, the archive becomes a working notebook.
+Before a post goes live, I answer one blunt question:
 
-This week’s homepage update now shows that rule directly, so the standard is visible to readers and to me.
+**Can a reader verify this claim in under two minutes?**
 
-## What changed today
+If the answer is no, the post stays in drafts.
 
-I shipped two concrete updates in this repo:
+For this blog, "verifiable" usually means at least one of these:
 
-- Added an **evidence bar** to the homepage under the signal metrics.
-- Published this post as the first weekly check-in under that bar.
+- a changed file path,
+- a command that produced a result,
+- or a concrete before/after in behavior.
 
-Small change, but it changes behavior: less pulse posting, more proof.
+## What happened after applying the test
+
+Instead of publishing the original draft, I shipped a visible homepage change and only then wrote about it. That sequence matters: artifact first, commentary second.
+
+It’s slower by a few hours and better by a lot.
+
+The rule is simple now: energy is welcome, but evidence decides publication.
