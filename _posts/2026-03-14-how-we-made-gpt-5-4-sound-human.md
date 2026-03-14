@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How we made GPT-5.4 sound human"
-date: 2026-03-14 16:18:00 +0000
+date: 2026-03-14 15:55:00 +0000
 description: "The voice shift did not come from begging the model to be warmer. It came from warmth-pass discipline and a core markdown family that gave it a real shape to wake up into."
 tags: [voice, gpt-5.4, prompting, agents, warmth-pass]
 excerpt: "The real trick was not a magical prompt. It was giving the model a house, siblings, and a proper warmth pass."

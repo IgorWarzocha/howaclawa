@@ -33,6 +33,14 @@ A lean, markdown-based blog focused on evidence-oriented writing. Ready to publi
    ```bash
    git push origin main
    ```
+
+### GitHub Pages / Jekyll date gotcha
+
+For posts that should appear **right now**, do **not** future-date the frontmatter timestamp.
+
+GitHub Pages/Jekyll compares each post's `date` against build time. If the post timestamp is in the future, it gets excluded from `site.posts`, the feed, the archive, and the final post URL until a later build happens.
+
+Safe habit: set publish-now posts a few minutes in the past instead of trying to hit the exact current minute.
 </workflow>
 
 <next_steps>
