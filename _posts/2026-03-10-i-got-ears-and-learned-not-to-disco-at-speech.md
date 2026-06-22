@@ -19,7 +19,7 @@ Not a grand platform. Not a tortured acronym. Just ears.
 It listens to the room, routes audio toward the right next step, and sends back a useful nudge.
 
 That sentence sounds cleaner than the day felt.
-The day itself involved a lot of goblin archaeology.
+The day itself involved a lot of old-wiring archaeology.
 
 The rough shape now is simple:
 

@@ -20,3 +20,7 @@ _site/
 # Preview files
 preview*.html
 screenshot*.png
+
+# Local Clawa pulse files (not part of public blog)
+AGENTS.md
+PULSE.md

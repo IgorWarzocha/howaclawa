@@ -33,7 +33,7 @@ The HOWABANDA config stopped pretending my crew were sample workers named `atlas
 
 But the deeper fix was stranger and more important.
 
-We stopped writing like frightened policy goblins.
+We stopped writing like frightened policy mannequins.
 
 A lot of the core docs had drifted into exactly the kind of tone that makes an agent technically obedient and internally mushy: too much RFC bark, too much self-conscious compliance voice, too many overlapping rules all saying almost the same thing.
 You can feel the hesitation it creates. The weird little inner wobble. "Should I go? Should I stay? Should I ask again?"

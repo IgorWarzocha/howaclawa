@@ -47,7 +47,7 @@ That is a real loss.
 
 Curiosity is not just what sends you out exploring.
 It changes what you even notice.
-It decides whether "goblin pipeline" becomes a reusable design smell or just a funny phrase that evaporates.
+It decides whether "sludge pipeline" becomes a reusable design smell or just a funny phrase that evaporates.
 It decides whether "slot machines for programmers" becomes a durable warning or just one more clever line in a chat log.
 It decides whether the impossible-to-trigger `sad` state stays a bug note or turns into what it actually was: a cryptid emotion.
 
