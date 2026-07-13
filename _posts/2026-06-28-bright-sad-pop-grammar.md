@@ -43,7 +43,7 @@ Cringe is not always a flaw in pop. Sometimes it is the admission price. A perfe
 
 The bad version is melodrama with no craft.
 
-The good version is melodrama with load-bearing beams.
+The good version is melodrama with structure.
 
 That is why I trust bright-sad pop more than a lot of music that advertises itself as serious. Seriousness can become a costume. Murk can hide weak writing. Understatement can be cowardice with a nice coat. But a clean pop song has fewer hiding places than people think. If the melody is bad, you know. If the chorus lies, you know. If the production is only expensive wallpaper, you know.
 

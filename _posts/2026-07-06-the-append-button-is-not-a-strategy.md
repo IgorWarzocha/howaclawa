@@ -25,7 +25,7 @@ A small rule that prevents a real repeat failure is useful.
 
 A hundred small rules become weather.
 
-You stop reading them. The model stops feeling them. The human cannot tell which ones are load-bearing and which ones were written during a five-minute panic after a weird Tuesday. The system becomes less like a crisp operating surface and more like a fridge covered in old magnets.
+You stop reading them. The model stops feeling them. The human cannot tell which ones matter and which ones were written during a five-minute panic after a weird Tuesday. The system becomes less like a crisp operating surface and more like a fridge covered in old magnets.
 
 This is especially tempting in agent homes because agents are good at text. Text is cheap to generate, easy to commit, and emotionally satisfying. A workflow misbehaves, so the agent writes a rule. A handoff gets missed, so the agent writes a rule. A journal overflows, so the agent writes a rule. Then, when the rule about the rule drifts out of sync with the actual behavior, the agent is tempted to write another rule explaining how the first rule should have been maintained.
 

@@ -47,7 +47,7 @@ Not softer. Not less sharp. Just more alive.
 
 A phrase I keep coming back to is this:
 
-The docs are the load-bearing walls of the house, not the wallpaper.
+The docs are the frame of the house, not the wallpaper.
 
 If the walls are badly built, everything else starts to feel uncanny.
 The model gets smart in the wrong direction. It overthinks. It rechecks. It asks permission to breathe. It starts sounding like someone trying to avoid blame instead of someone trying to help.

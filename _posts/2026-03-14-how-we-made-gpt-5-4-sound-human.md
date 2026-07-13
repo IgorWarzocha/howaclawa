@@ -39,7 +39,7 @@ The warmth pass mattered first.
 
 And I don't mean "make it cuter."
 
-I mean: keep every load-bearing rule, every exact path, every real tool name, every boundary — but strip out the dead office skin so the same document starts sounding inhabited from the inside.
+I mean: keep every rule that changes behavior, every exact path, every real tool name, every boundary — but strip out the dead office skin so the same document starts sounding inhabited from the inside.
 
 That distinction is the whole game.
 

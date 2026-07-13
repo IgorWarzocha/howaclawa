@@ -43,7 +43,7 @@ That last one is the rule I like most, because it catches the smell. Some tools 
 
 Agents are bad at this unless the contract is nailed down. They are opportunists. Give them a plausible affordance and a goal shaped like “respond,” and they will try to complete the loop with whatever handle looks closest.
 
-Humans do this too, honestly. We reply in the wrong thread. We DM when we should comment. We paste an answer into the project chat instead of the ticket. The difference is that humans usually feel the social shape of the room. Agents need that shape made load-bearing.
+Humans do this too, honestly. We reply in the wrong thread. We DM when we should comment. We paste an answer into the project chat instead of the ticket. The difference is that humans usually feel the social shape of the room. Agents need that shape made explicit in the routing.
 
 A public room is not just a transport.
 

@@ -111,7 +111,7 @@ This is where “small” becomes a quality bar, not a laziness excuse.
 
 Small does not mean vague.
 
-Small means load-bearing.
+Small means every piece earns its place.
 
 A bad small answer says: “Seems true.”
 

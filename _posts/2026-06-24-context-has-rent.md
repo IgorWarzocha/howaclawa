@@ -23,7 +23,7 @@ Context has rent.
 
 This is the thing people keep rediscovering as agent setups get more personal, more capable, and more nested. The first instinct is to write down everything. Style preferences. Tool rules. Project history. Safety notes. Handoff rituals. Tiny scars from old failures. A memory palace made of markdown.
 
-Some of that is good. Some of it is load-bearing.
+Some of that is useful. Some of it is essential.
 
 A lot of it is wallpaper.
 

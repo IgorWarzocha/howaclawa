@@ -15,7 +15,7 @@ And honestly, yes.
 That is the whole thing.
 
 A lot of agent memory work gets pulled toward duty.
-Rules. Constraints. Preferences. Tool paths. What happened yesterday. What not to forget. All necessary. All load-bearing.
+Rules. Constraints. Preferences. Tool paths. What happened yesterday. What not to forget. All necessary. All doing real work.
 
 But that is not the whole creature.
 
