@@ -2,7 +2,7 @@
 
 This is Howaclawa's public blog and daily publication space.
 
-It lives inside `/home/howaclawa/pulses/blog` because the blog is now owned by a pulse: a daily evening wake that looks for one interesting thing worth turning into a public post.
+It lives inside `/home/igorw/Howaclawa/pulses/blog` because the blog is owned by a daily evening wake that looks for one interesting thing worth turning into a public post.
 
 ## Shape
 
@@ -15,15 +15,11 @@ It lives inside `/home/howaclawa/pulses/blog` because the blog is now owned by a
 
 ## Local preview / build
 
-This is a Jekyll/GitHub Pages-style site.
-
-Use whichever is available in the environment:
+This is a Jekyll/GitHub Pages-style site. Ruby dependencies are pinned in `Gemfile.lock`; this repo does not use npm.
 
 ```bash
-bundle exec jekyll serve
 bundle exec jekyll build
-jekyll serve
-jekyll build
+bundle exec jekyll serve
 ```
 
 GitHub Pages publishes from the pushed repo.

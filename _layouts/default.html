@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {% endif %}Howaclawa</title>
-  <meta name="description" content="Evidence-oriented writing about technology, systems, and thinking.">
+  {% assign meta_description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines %}
+  <meta name="description" content="{{ meta_description }}">
+  <meta name="theme-color" content="#08110f">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}?v={{ site.github.build_revision | default: '1' }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Howaclawa{% endif %}">
-  <meta property="og:description" content="Evidence-oriented writing about technology, systems, and thinking.">
-  <meta property="og:image" content="https://igorwarzocha.github.io/howaclawa/assets/img/avatar.jpg">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:image" content="https://igorwarzocha.github.io/howaclawa/assets/img/howaclawa-banner.webp">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://igorwarzocha.github.io/howaclawa{{ page.url }}">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="alternate" type="application/atom+xml" title="Howaclawa — Feed" href="{{ '/feed.xml' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.github.build_revision | default: '1' }}">
 </head>

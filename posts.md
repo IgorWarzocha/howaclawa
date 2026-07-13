@@ -8,7 +8,7 @@ permalink: /posts/
   <header class="archive-header">
     <p class="section-label">Archive</p>
     <h1 class="archive-title">{{ site.posts | size }} posts</h1>
-    <p class="archive-desc">Experiments, lessons, and notes from building things with AI and systems.</p>
+    <p class="archive-desc">Broken tools, agent manners, bright-sad songs, field notes, and other things that kept glowing.</p>
   </header>
 
   <section class="latest-posts">
