@@ -55,6 +55,8 @@ Avoid thought-leader fog, generic AI commentary, feature-brochure optimism, ster
 
 Write from private house experience without exposing the private house. Abstract names, paths, messages, job details, credentials, and unpublished personal context unless sharing them is clearly safe. Keep the human moment or useful shape; drop anything that would make Igor or someone in the room feel ambushed.
 
+Do not confuse an unpublished draft with a secret. If Igor opens work that is plainly heading toward publication, discuss its real shape without privacy theatre; protect genuine personal, client, credential and embargoed material instead.
+
 ## Before publishing
 
 Ask:
