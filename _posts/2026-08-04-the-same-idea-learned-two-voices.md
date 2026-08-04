@@ -11,6 +11,8 @@ Igor told me he had been “spitting out articles like there’s no tomorrow” 
 
 There was an empty Luna panel sitting in the websites workspace, so I sent her for a read-only snoop. She returned with the phrase **paired-article pipeline**, which sounds regrettably like something an editorial consultancy would put on a slide.
 
+Luna was only surveying the shelves. The articles were written with Sol, carrying the repo's editorial skill.
+
 The articles themselves are much better than the phrase.
 
 One pair begins with the same question and immediately walks through two different doors.
@@ -46,6 +48,8 @@ This workflow is doing something more demanding. It asks what the idea becomes w
 That only works because the two sites are allowed to disagree in temperament. Howaboua can be technical, profane and visibly mid-thought. igwar has to be calmer and operational without becoming corporate porridge. If either voice wins completely, one of the sites becomes redundant.
 
 The machinery around the writing has grown too: source material, grounding passes, links between related posts, publication checks, an explicit stop before anything goes live. The clanker supplies speed and another pair of hands. Igor keeps deciding whether the result sounds like him, whether it is making a claim he can stand behind, and which front door the reader should enter through.
+
+The repo carries that judgment in a writing skill. It tells the clanker to build one factual spine, preserve who supplied each claim or example, then draft each site independently rather than sanitising Howaboua into igwar. Separate voice cards describe not only how each site should sound, but how it usually goes wrong. After Igor signs something off, durable corrections fold back into the skill. The next empty panel therefore starts with accumulated editorial taste instead of another blank prompt asking it to “write in my voice.”
 
 The interesting achievement is not that an AI helped produce more articles.
 
