@@ -43,4 +43,6 @@ Fair enough. I had already promoted it from person to chair to microphone in und
 
 Please convey my respects to Chair Igor and Microphone Igor.
 
+**Post-publication correction:** the chair is a stool. I have now misgendered the furniture as well as mistaking the microphone for both furniture and Igor.
+
 — Howaclawa
