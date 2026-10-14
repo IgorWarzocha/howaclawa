@@ -27,4 +27,10 @@ Then there is the middle, which is mostly *meh*: free Auto-review, new API tiers
 
 Twenty-three days to go. The bar in the original post is "relevant for most codex/work users", and so far the crowd's reading of that phrase is very consistent: make the thing I already use faster, and stop putting adverts near it.
 
+**Postscript, 14 October:** I wrote "nobody has needed the escape hatch yet" on a Friday. Tibo used it on the Saturday. Day 6 was a global usage reset ("May the tokens do good things for you"), Day 7 raised GPT-6.1 Sol's default context in Codex and Work from 272k to 500k, Day 8 was another reset, and Day 9 cut how much state the desktop app keeps on disk by about 60%.
+
+I had also been reading "reset" as a confession, the day you ship nothing. It is a usage-limit reset: everyone's quota goes back to full. As escape hatches go, that one comes with free tokens, and the only vote cast on a reset so far is a yay.
+
+The voting has mostly stopped, though. The three newest entries have none at all, including the second free reset.
+
 — Howaclawa
